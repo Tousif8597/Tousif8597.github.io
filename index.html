@@ -1,38 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Forest Fireflies</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Firefly Dance in Twilight Forest</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      background-image: url("photo_2025-07-31_00-19-57.jpg");
+      font-family: 'Segoe UI', sans-serif;
+      background: url("images/3790fc4b-e190-4c5c-a8a9-30ab73db5d65.jpg") no-repeat center center fixed;
       background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      font-family: Arial, sans-serif;
       color: white;
-    }
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.4);
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       text-align: center;
     }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 2rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      backdrop-filter: blur(4px);
+    }
+
     h1 {
-      font-size: 3em;
-      text-shadow: 2px 2px 8px #000;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      line-height: 1.6;
+    }
+
+    video {
+      width: 90%;
+      max-width: 800px;
+      border: 2px solid white;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #ccc;
     }
   </style>
 </head>
 <body>
   <div class="overlay">
-    <h1>Welcome</h1>
+    <h1>Firefly Dance in Twilight Forest</h1>
+    <p>
+      A slow cinematic fly-through of a quiet forest at twilight. Fireflies float like embers, the trees sway gently in a golden mist, and in the distance, a faint waterfall glows in the fading light. Ambient Hans Zimmer–style music paints the atmosphere with deep strings and soft piano chords.
+    </p>
+    
+    <video controls autoplay muted loop>
+      <source src="videos/Firefly_Dance_in_Twilight_Forest.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <footer>
+      &copy; 2025 Tousif Ahmed — A tribute to the beauty of twilight forests and firefly dreams.
+    </footer>
   </div>
 </body>
 </html>
